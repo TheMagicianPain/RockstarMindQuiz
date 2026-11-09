@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090e11"><meta name="description" content="Explore your Physical and Emotional Suggestibility profile using two questionnaires.">
+<title>The Suggestibility Assessment</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+:root{--bg:#090e11;--panel:#131b1e;--line:#324043;--text:#f4f4ef;--muted:#a0adae;--gold:#eac475;--teal:#45d8c9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:var(--bg);color:var(--text);font-family:'DM Sans',system-ui,sans-serif;overflow-x:hidden}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--teal);outline-offset:4px}.glow{position:fixed;border-radius:50%;filter:blur(95px);pointer-events:none;opacity:.19}.glow-a{width:540px;height:540px;background:#0b7e77;top:-230px;right:-180px}.glow-b{width:470px;height:470px;background:#ad8135;bottom:-270px;left:-200px}.site-header{max-width:1120px;margin:0 auto;padding:28px 32px;display:flex;justify-content:space-between;align-items:center;gap:20px;position:relative}.brand{text-decoration:none;color:var(--text);display:flex;gap:14px;align-items:center;font-size:15px;letter-spacing:.17em;line-height:1.2}.brand b{color:var(--gold)}.brand small{display:block;font-size:9px;letter-spacing:.18em;color:var(--muted);margin-top:5px}.brand-symbol{font-size:36px;color:var(--gold)}.header-tag{font-size:10px;letter-spacing:.15em;color:var(--muted)}.shell{position:relative;max-width:960px;margin:0 auto;padding:72px 28px 80px;min-height:calc(100vh - 165px)}.screen{display:none;animation:appear .28s ease}.screen.active{display:block}@keyframes appear{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}.eyebrow{font-size:11px;letter-spacing:.23em;font-weight:700;color:var(--gold)}h1{font:500 clamp(43px,6.1vw,76px)/1.12 'Playfair Display',Georgia,serif;letter-spacing:-.028em;margin:24px 0}h1 em{font-weight:500;color:var(--gold)}.lead{font-size:clamp(16px,2vw,19px);line-height:1.85;color:#bec8c6;max-width:680px}.lead strong{color:var(--text)}.features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--line);border-radius:13px;margin:38px 0 36px;background:#11191baa}.features>div{padding:24px 22px;display:flex;flex-direction:column;gap:5px}.features>div+div{border-left:1px solid var(--line)}.features span{font-size:12px;color:var(--gold);font-weight:700;margin-bottom:12px}.features strong{font-size:14px}.features small{font-size:12px;color:var(--muted)}.btn{min-height:58px;padding:0 25px;border-radius:8px;font-size:12px;letter-spacing:.13em;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:36px;transition:transform .15s,background .15s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--gold);color:#17150c;border:1px solid var(--gold)}.outline{background:transparent;border:1px solid var(--line);color:var(--text)}.disclaimer{font-size:12px;color:#899997;line-height:1.75;max-width:670px;margin:22px 0}.quiz-top{display:flex;justify-content:space-between;align-items:center;gap:12px}.counter{font-size:12px;letter-spacing:.12em;color:var(--muted)}.progress-track{height:5px;border-radius:10px;background:#243033;margin:21px 0 70px;overflow:hidden}.progress-track div{height:100%;width:0;background:linear-gradient(90deg,var(--teal),var(--gold));transition:width .25s}.question-index{color:var(--gold);font-size:12px;letter-spacing:.2em;font-weight:700}h2{font:500 clamp(27px,4vw,48px)/1.3 'Playfair Display',Georgia,serif;max-width:830px;min-height:150px;margin:22px 0 40px}.choices{display:grid;grid-template-columns:1fr 1fr;gap:16px}.choice{display:flex;align-items:center;gap:15px;padding:22px;background:#141d20;border:1px solid #344245;border-radius:9px;color:var(--text);font-weight:700;letter-spacing:.1em;text-align:left;transition:background .15s,border .15s,transform .15s}.choice:hover{background:#1e2d2f;border-color:var(--teal);transform:translateY(-2px)}.choice-icon{display:grid;place-items:center;width:34px;height:34px;border:1px solid #586262;border-radius:50%;color:var(--teal);font-size:21px}.arrow{margin-left:auto;color:var(--gold)}.quiz-footer{display:flex;align-items:center;justify-content:space-between;margin-top:36px;gap:15px;color:var(--muted);font-size:12px}.text-btn{background:none;border:0;padding:12px 0;color:var(--gold);font-size:11px;letter-spacing:.12em;font-weight:700}.text-btn:disabled{opacity:.3;cursor:not-allowed}.result-lead{margin-bottom:30px}.results-card{background:linear-gradient(145deg,#1b282a,#121a1e);border:1px solid #3b4a4b;border-radius:16px;padding:30px 35px}.result-topline{display:flex;justify-content:space-between;gap:10px;font-size:11px;letter-spacing:.15em;color:var(--muted)}#profileLabel{color:var(--gold);text-align:right}.split-stats{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:28px 0}.split-stats>div{display:flex;flex-direction:column;gap:8px}.stat-num{font-size:clamp(46px,7vw,78px);line-height:1.1;letter-spacing:-.07em;color:var(--gold);font-weight:700}.stat-num.teal{color:var(--teal)}.split-stats small{font-size:10px;letter-spacing:.13em;color:var(--muted)}.split-bar{height:14px;display:flex;border-radius:12px;overflow:hidden;background:#344}.split-bar div{transition:width .3s}.split-bar #physicalBar{background:var(--gold)}.split-bar #emotionalBar{background:var(--teal)}.bar-key{display:flex;justify-content:space-between;margin-top:13px;font-size:12px;color:var(--muted)}.bar-key i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px}.key-gold{background:var(--gold)}.key-teal{background:var(--teal)}.interpretation{margin:28px 0;padding:28px 30px;border:1px solid var(--line);border-radius:12px;background:#10181b}.interpretation h3{font:500 27px 'Playfair Display',Georgia,serif;margin:0 0 12px}.interpretation p{color:#c3cbca;line-height:1.8;font-size:14px}.interpretation .nuance{color:var(--muted);font-size:12px}.score-details{border:1px solid var(--line);border-radius:10px;padding:20px 25px}.score-details summary{cursor:pointer;list-style:none;font-weight:700;font-size:11px;letter-spacing:.12em;display:flex;justify-content:space-between}.score-details summary::-webkit-details-marker{display:none}.score-details summary span{color:var(--gold);font-size:17px}.score-details p{font-size:12px;color:var(--muted);line-height:1.7}.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:25px 0}.detail-grid>div{display:flex;flex-direction:column;gap:7px}.detail-grid small{color:var(--muted)}.detail-grid strong{font-size:23px;color:var(--gold)}.result-actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}footer{position:relative;max-width:1120px;padding:22px 32px 30px;margin:auto;border-top:1px solid #273235;display:flex;justify-content:space-between;font-size:10px;letter-spacing:.15em;color:#83918e}footer span{color:#667774}@media(max-width:650px){.site-header{padding:20px}.header-tag{display:none}.shell{padding:54px 20px 80px}.features{grid-template-columns:1fr}.features>div{padding:16px 20px}.features>div+div{border-left:none;border-top:1px solid var(--line)}.features span{margin-bottom:4px}.progress-track{margin-bottom:47px}h2{min-height:180px}.choices{grid-template-columns:1fr;gap:12px}.quiz-footer{align-items:flex-start;flex-direction:column}.results-card{padding:23px 20px}.split-stats{gap:12px}.split-stats small{font-size:9px}.interpretation{padding:23px 20px}.btn{width:100%}footer{padding:20px}}
+
+</style>
+</head>
+<body>
+<div class="glow glow-a"></div><div class="glow glow-b"></div>
+<header class="site-header"><a href="#" class="brand" id="homeLink" aria-label="Back to start"><span class="brand-symbol">✦</span><span>THE <b>DRAW</b><small>THE SUGGESTIBILITY ASSESSMENT</small></span></a><div class="header-tag">SELF-DISCOVERY • 36 QUESTIONS</div></header>
+<main class="shell">
+<section id="welcome" class="screen active" aria-labelledby="welcomeTitle">
+  <div class="eyebrow">✦ EXPLORE YOUR RESPONSE STYLE</div>
+  <h1 id="welcomeTitle">How does your mind<br><em>receive suggestions?</em></h1>
+  <p class="lead">Discover your balance of <strong>Physical</strong> and <strong>Emotional Suggestibility</strong> using two classic yes-or-no questionnaires from the Kappas tradition.</p>
+  <div class="features"><div><span>01</span><strong>36 questions</strong><small>Two sets of 18</small></div><div><span>02</span><strong>About 5 minutes</strong><small>At your own pace</small></div><div><span>03</span><strong>Results only</strong><small>Send name and percentages</small></div></div>
+  <label for="clientName" style="display:block;margin:0 0 10px;color:var(--gold);font-size:12px;letter-spacing:.13em;font-weight:700">YOUR NAME</label>
+  <input id="clientName" type="text" autocomplete="name" maxlength="120" placeholder="Enter your name" required style="display:block;width:min(100%,450px);height:56px;padding:0 16px;margin:0 0 20px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--text);font:inherit">
+  <p id="nameError" role="alert" style="color:#f19e87;font-size:12px;display:none;margin:0 0 14px">Please enter your name before starting.</p>
+  <button class="btn primary" id="startBtn">BEGIN ASSESSMENT <span>↗</span></button>
+  <p class="disclaimer">For education and self-reflection. This is a model-specific questionnaire, not a clinical diagnosis or a measure of overall hypnotizability.</p>
+</section>
+<section id="quiz" class="screen" aria-labelledby="questionTitle">
+  <div class="quiz-top"><span id="sectionName" class="eyebrow"></span><span id="countText" class="counter"></span></div>
+  <div class="progress-track" role="progressbar" aria-label="Assessment progress" aria-valuemin="0" aria-valuemax="36" aria-valuenow="0" id="progress"><div id="progressFill"></div></div>
+  <div class="question-index" id="questionIndex"></div>
+  <h2 id="questionTitle" tabindex="-1"></h2>
+  <div class="choices" role="group" aria-label="Your answer"><button class="choice" data-answer="yes"><span class="choice-icon">✓</span> YES <span class="arrow">↗</span></button><button class="choice" data-answer="no"><span class="choice-icon">×</span> NO <span class="arrow">↗</span></button></div>
+  <div class="quiz-footer"><button class="text-btn" id="backBtn">← PREVIOUS QUESTION</button><span>Answer based on your typical experience.</span></div>
+</section>
+<section id="results" class="screen" aria-labelledby="resultsTitle">
+ <div class="eyebrow">✦ YOUR RESULTS</div>
+ <h1 id="resultsTitle">Your <em>suggestibility.</em></h1>
+ <div class="results-card" style="margin-top:32px">
+  <div class="split-stats">
+   <div><span class="stat-num teal" id="emotionalPct">—</span><small>EMOTIONAL</small></div>
+   <div><span class="stat-num" id="physicalPct">—</span><small>PHYSICAL</small></div>
+  </div>
+  <div class="split-bar" aria-label="Emotional and physical suggestibility proportions"><div id="emotionalBar"></div><div id="physicalBar"></div></div>
+ </div>
+ <section class="interpretation" id="profileInterpretation" aria-live="polite">
+  <div class="eyebrow" id="profileType">YOUR PROFILE</div>
+  <h3 id="profileHeading">Understanding your results</h3>
+  <p id="profileSummary"></p>
+  <p id="physicalExplanation"></p>
+  <p id="emotionalExplanation"></p>
+  <p class="nuance">These descriptions reflect the Kappas suggestibility framework. They describe tendencies in how suggestions may be understood, not intelligence, personality limits, or a clinical diagnosis.</p>
+ </section>
+ <div class="result-actions"><button class="btn primary" id="copyBtn">COPY RESULTS <span>↗</span></button><button class="btn outline" id="retakeBtn">TAKE IT AGAIN</button></div>
+</section>
+</main><footer>✦ THE DRAW <span>NO ACCOUNT REQUIRED</span></footer>
+<iframe name="hiddenGoogleSubmit" title="Submission" style="display:none" aria-hidden="true"></iframe>
+<script>
+'use strict';
+// John Kappas tradition: each questionnaire contains 18 Yes/No items.
+// Items 1–2 = 10 points if Yes; items 3–18 = 5 points if Yes.
+// Adjusted physical percent = rounded score1 / (score1 + score2) * 100.
+// Emotional percent = 100 - physical percent.
+const QUESTIONS = [
+ [
+ 'Have you ever walked in your sleep during your adult life?',
+ 'As a teenager, did you feel comfortable expressing your feelings to one or both of your parents?',
+ 'Do you have a tendency to look directly into people’s eyes and/or move closer to them, when discussing an interesting subject?',
+ 'Do you feel most people you meet for the first time are uncritical of your appearance?',
+ 'In a group situation with people you have just met, would you feel comfortable drawing attention to yourself, by initiating a conversation?',
+ 'Do you feel comfortable holding hands or hugging someone you are in a relationship with, while other people are present?',
+ 'When someone talks about feeling warm physically, do you begin to feel warm also?',
+ 'Do you occasionally have a tendency to tune out, when someone is talking to you, and at times not even hear what the other person is saying because you are anxious to come up with your side of it?',
+ 'Do you feel that you learn and comprehend better by seeing and/or reading, rather than hearing?',
+ 'In a new class or lecture situation, do you usually feel comfortable asking questions in front of the group?',
+ 'When expressing your ideas, do you find it important to relate all the details leading up to the subject, so the other person can understand it completely?',
+ 'Do you enjoy relating to children?',
+ 'Do you find it easy to be at ease and comfortable with your body movements, even when faced with unfamiliar people and circumstances?',
+ 'Do you prefer reading fiction, rather than non-fiction?',
+ 'If you were to imagine sucking on a sour bitter, juicy, yellow lemon, would your mouth water?',
+ 'If you feel that you deserve to be complimented for something well done, do you feel comfortable if the compliment is given to you in front of other people?',
+ 'Do you feel that you are a good conversationalist?',
+ 'Do you feel comfortable when complimentary attention is drawn to your physical body or appearance?'
+ ],
+ [
+ 'Have you ever awakened in the middle of the night and felt that you could not move your body and/or could not talk?',
+ 'As a child, did you feel that you were more affected by the tone of voice of your parents than by what they actually said?',
+ 'If someone you are associated with talks about a fear that you too have experienced, do you have a tendency to have an apprehensive or fearful feeling, as well?',
+ 'If you are involved in an argument with someone, after the argument is over, do you have a tendency to dwell on what you could or should have said?',
+ 'Do you have a tendency to tune out occasionally, when someone is talking to you – perhaps not even hear what was said – because your mind has drifted to something totally unrelated?',
+ 'Do you sometimes desire to be complimented for a job well done, but feel embarrassed or uncomfortable when complimented?',
+ 'Do you often have a fear or dread of not being able to carry on a conversation with someone you have just met?',
+ 'Do you feel self-conscious, when attention is drawn to your physical body or appearance?',
+ 'If you had your choice, would you rather avoid being around children most of the time?',
+ 'Do you feel that you are not relaxed or loose in your body movements, especially when faced with unfamiliar people or circumstances?',
+ 'Do you prefer reading non-fiction, rather than fiction?',
+ 'If someone describes a very bitter taste, do you have difficulty experiencing the physical feeling of it?',
+ 'Do you generally feel that you see yourself less favorably than others see you?',
+ 'Do you tend to feel awkward or self-conscious initiating touch (holding hands, kissing, etc.) with someone you are in a relationship with, while other people are present?',
+ 'In a new class or lecture situation, do you usually feel uncomfortable asking questions in front of the group, even though you may desire further explanation?',
+ 'Do you feel uneasy, if someone you have just met looks you directly in the eyes when talking to you, especially if the conversation is about you?',
+ 'In a group situation with people you have just met, would you feel uncomfortable drawing attention to yourself by initiating a conversation?',
+ 'If you are in a relationship or are very close to someone, do you find it difficult or embarrassing to verbalize your love for him or her?'
+ ]
+];
+const ALL = QUESTIONS.flat();
+let answers = Array(36).fill(null), current = 0;
+// Fill these identifiers from Google Forms' "Get pre-filled link" URL.
+// They are not available from the public responder link alone in this environment.
+const GOOGLE_FORM = {
+  endpoint: 'https://docs.google.com/forms/d/e/1FAIpQLSfjOycUOkXNcYF8QhrLvb_FC8zsjOydPyEFRRu8fgU9GsBOog/formResponse',
+  nameEntry: '', // e.g., entry.123456789
+  emotionalEntry: '',
+  physicalEntry: ''
+};
+let submitted = false;
+function sendResults(name, r) {
+ if (submitted || r.emotional === null) return;
+ if (![GOOGLE_FORM.nameEntry, GOOGLE_FORM.emotionalEntry, GOOGLE_FORM.physicalEntry].every(x => /^entry\.\d+$/.test(x))) {
+   console.info('Google Form not connected yet: paste the three entry IDs from a pre-filled link.');
+   return;
+ }
+ submitted = true;
+ const form = document.createElement('form');
+ form.method = 'POST'; form.action = GOOGLE_FORM.endpoint; form.target = 'hiddenGoogleSubmit'; form.style.display='none';
+ [[GOOGLE_FORM.nameEntry,name],[GOOGLE_FORM.emotionalEntry,String(r.emotional)],[GOOGLE_FORM.physicalEntry,String(r.physical)]].forEach(([key,value])=>{
+   const input = document.createElement('input'); input.type='hidden'; input.name=key; input.value=value; form.appendChild(input);
+ });
+ document.body.appendChild(form);form.submit();form.remove();
+}
+const $ = id => document.getElementById(id);
+function screen(name){for(const id of ['welcome','quiz','results'])$(id).classList.toggle('active',id===name);window.scrollTo({top:0,behavior:'instant'});}
+function renderQuestion(){const section=current<18?1:2; $('sectionName').textContent=`QUESTIONNAIRE 0${section}`;$('countText').textContent=`${current+1} / 36`;$('questionIndex').textContent=`QUESTION ${String(current%18+1).padStart(2,'0')}`;$('questionTitle').textContent=ALL[current];$('progressFill').style.width=`${current/36*100}%`;$('progress').setAttribute('aria-valuenow',current);$('backBtn').disabled=current===0;$('questionTitle').focus({preventScroll:true});}
+function answer(value){answers[current]=value;if(current<35){current++;renderQuestion();}else showResults();}
+function calculate(a){const totals=[0,0];for(let i=0;i<36;i++){if(a[i]===true)totals[Math.floor(i/18)]+=i%18<2?10:5;}const combined=totals[0]+totals[1];const physical=combined>0?Math.round(totals[0]/combined*100):null;return {score1:totals[0],score2:totals[1],combined,physical,emotional:physical===null?null:100-physical};}
+function showResults(){
+ const r=calculate(answers);
+ $('emotionalPct').textContent=r.emotional===null?'—':r.emotional+'%';
+ $('physicalPct').textContent=r.physical===null?'—':r.physical+'%';
+ $('emotionalBar').style.width=(r.emotional??0)+'%';
+ $('physicalBar').style.width=(r.physical??0)+'%';
+ const physicalText = 'Physical suggestibility, in the Kappas model, describes a tendency to respond more readily to direct, literal suggestions and to communicate feelings through physical expression, touch, or action.';
+ const emotionalText = 'Emotional suggestibility, in the Kappas model, describes a tendency to respond more readily to indirect or inferential suggestions, with greater attention to tone, context, and implied meaning.';
+ $('physicalExplanation').textContent=physicalText;
+ $('emotionalExplanation').textContent=emotionalText;
+ if(r.emotional===null){
+   $('profileType').textContent='NO SCORED YES ANSWERS';
+   $('profileHeading').textContent='No percentage available';
+   $('profileSummary').textContent='You answered No to every question, so the combined score is zero. A percentage split cannot be calculated from these answers.';
+ }else if(r.emotional>=80){
+   $('profileType').textContent='INTELLECTUAL • KAPPAS FRAMEWORK';
+   $('profileHeading').textContent='Your profile: Intellectual';
+   $('profileSummary').textContent=`With ${r.emotional}% Emotional and ${r.physical}% Physical Suggestibility, your results fall in the “Intellectual” category (80% or higher Emotional) within the Kappas system. This refers to a strongly emotionally suggestible communication style—not an IQ or intelligence rating. Indirect language, implication, and context may resonate more than very literal instructions.`;
+ }else if(r.emotional>r.physical){
+   $('profileType').textContent='EMOTIONAL-LEANING PROFILE';
+   $('profileHeading').textContent='You lean Emotional';
+   $('profileSummary').textContent=`Your results are ${r.emotional}% Emotional and ${r.physical}% Physical Suggestibility. In the Kappas framework, this indicates a stronger tendency toward inferential communication and sensitivity to the context or implied meaning of suggestions.`;
+ }else if(r.physical>r.emotional){
+   $('profileType').textContent='PHYSICAL-LEANING PROFILE';
+   $('profileHeading').textContent='You lean Physical';
+   $('profileSummary').textContent=`Your results are ${r.emotional}% Emotional and ${r.physical}% Physical Suggestibility. In the Kappas framework, this indicates a stronger tendency toward straightforward, literal communication and direct suggestions.`;
+ }else{
+   $('profileType').textContent='BALANCED PROFILE';
+   $('profileHeading').textContent='A balanced profile';
+   $('profileSummary').textContent='Your results are 50% Emotional and 50% Physical Suggestibility. Within the Kappas framework, neither style predominates in this questionnaire.';
+ }
+ screen('results');
+ sendResults($('clientName').value.trim(), r);
+}
+$('startBtn').addEventListener('click',()=>{if(!$('clientName').value.trim()){$('nameError').style.display='block';$('clientName').focus();return;}$('nameError').style.display='none';submitted=false;current=0;answers=Array(36).fill(null);screen('quiz');renderQuestion();});document.querySelectorAll('[data-answer]').forEach(btn=>btn.addEventListener('click',()=>answer(btn.dataset.answer==='yes')));$('backBtn').addEventListener('click',()=>{if(current>0){current--;renderQuestion();}});$('retakeBtn').addEventListener('click',()=>{answers=Array(36).fill(null);current=0;screen('quiz');renderQuestion();});$('homeLink').addEventListener('click',e=>{e.preventDefault();if($('quiz').classList.contains('active')&&current>0&&!confirm('Leave the assessment? Your answers will be cleared.'))return;answers=Array(36).fill(null);current=0;screen('welcome');});$('copyBtn').addEventListener('click',async()=>{const r=calculate(answers);const copy=`Emotional: ${r.emotional===null?'N/A':r.emotional+'%'}
+Physical: ${r.physical===null?'N/A':r.physical+'%'}`;try{await navigator.clipboard.writeText(copy);$('copyBtn').innerHTML='COPIED ✓';setTimeout(()=>$('copyBtn').innerHTML='COPY RESULTS <span>↗</span>',2200);}catch{window.prompt('Copy these results:',copy);}});
+// Exposed for simple development test in browser console.
+window.SuggestibilityAssessment={calculate};
+
+</script>
+</body>
+</html>
